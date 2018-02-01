@@ -8,6 +8,8 @@ Scenario: The Query
 Given url 'https://api.twitter.com/1.1/search/tweets.json'
 And header Authorization = 'Bearer ' + accessToken
 And header Accept-Encoding = 'gzip'
-And param q = '@IKEAUSA'
+And param q = aT
+And param count = counT
+And param until = untiL
 When method get
 Then status 200
